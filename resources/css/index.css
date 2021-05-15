@@ -15,6 +15,19 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
+h1, h2, h4, h5, h6 {
+    padding: 0;
+    margin: 20px 0;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
 @media only screen and (max-width: 700px) {
     body {
         margin: 0;
@@ -31,6 +44,7 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
+    z-index: 100;
 }
 
 header h1 {
@@ -89,3 +103,228 @@ header .HeaderIcon {
         width: 2rem;
     }
 }
+
+
+
+
+
+
+
+
+/* BANNERS */
+.banner {
+    width: 100%;
+    color: #3d3d3d;
+    display: flex;
+    padding: 0;
+}
+
+.banner .imageContainer {
+    display: inline-block;
+    padding: 32px 24px;
+}
+
+.leftSection {
+    width: 60%;
+}
+
+.rightSection {
+    width: 40%;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.textContainer {
+    margin-left: 24px;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+
+
+
+
+
+
+/* BANNER1 */
+#banner1 {
+    background-color: #e4e3e3;
+    margin-top: 64px;
+}
+
+#banner1 .textContainer {
+    max-width: 30%;
+}
+
+#banner1 .textContainer h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#banner1 .textContainer h4 {
+    font-size: 1.5rem;
+    font-weight: 200px;
+}
+
+#banner1 .button {
+    padding: 8px 0;
+    width: 100%;
+    background-color: #4b4b4b;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 940px) {
+    #banner1 {
+        display: block;
+        padding: 0;
+    }
+
+    #banner1 .leftSection, #banner1 .rightSection {
+        width: 100%;
+        padding: 0;
+    }
+
+    #banner1 .textContainer {
+        max-width: 100%;
+        margin: 0;
+        padding: 32px 16px;
+        font-size: smaller;
+    }
+
+    #banner1 .textContainer h2 {
+        /* font-size: 3rem; */
+        font-size: 2rem;
+    }
+
+    #banner1 .textContainer h4 {
+        /* font-size: 1.5rem; */
+        font-size: 1rem;
+    }
+
+    #banner1 .imageContainer {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/* BANNER2 */
+#banner2 {
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#banner2 .leftSection {
+    margin-right: 2px;
+    flex-basis: 60%;
+}
+
+#banner2 .imageContainer {
+    padding-top: 27px;
+}
+
+#banner2 .leftSection h2 {
+    margin-top: 0;
+}
+
+#banner2 .leftSection p {
+    margin-bottom: 32px;
+}
+
+#banner2 .rightSection {
+    flex-basis: 40%;
+    border-left: 1px solid #c2c2c2;
+    border-radius: 1px;
+}
+
+#banner2 .rightSection .spacer {
+    height:26px;
+    width:100%;
+    clear:both;
+}
+
+#banner2 .rightSection .sidebarItem {
+    display: block;
+    padding: 15px 0;
+    transition: background-color 0.1s ease-in;
+}
+
+#banner2 .rightSection .sidebarItem:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+#banner2 .rightSection .imageContainer {
+    max-width: 35%;
+    height: auto;
+    padding: 0;
+    margin-left: 16px;
+}
+
+#banner2 .rightSection .textContainer {
+    max-width: 40%;
+    vertical-align: top;
+    height: auto;
+    padding: 0;
+}
+
+#banner2 .rightSection .textContainer a {
+    color: #4abaff;
+}
+
+@media only screen and (max-width: 940px) {
+    #banner2 {
+        display: block;
+        padding: 0;
+    }
+
+    #banner2 .leftSection {
+        display: none;
+    }
+
+    #banner2 .rightSection {
+        width: 100%;
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+    }
+
+    #banner2 .sidebarItem {
+        width: 100%;
+    }
+
+    #banner2 .imageContainer {
+        max-width: 100%;
+        display: block;
+        padding: 16px 0;
+    }
+
+    #banner2 .textContainer {
+        display: block;
+        max-width: 100%;
+        margin: 0;
+        padding: 0 0 64px 16px;
+        font-size: smaller;
+    }
+
+    #banner2 .spacer {
+        display: none;
+    }
+}
+
