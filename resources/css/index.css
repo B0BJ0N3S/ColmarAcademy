@@ -20,6 +20,10 @@ img {
     max-width: 100%;
 }
 
+video {
+    max-width: 100%;
+}
+
 @media only screen and (max-width: 700px) {
     body {
         margin: 0;
@@ -260,7 +264,7 @@ header nav a:hover {
     margin-left: 18px;
 }
 
-#banner2 .right .sideItem .textContent a {
+.right .sideItem .textContent a {
     color: #5f9ce4;
 }
 /* ---------------------------------------------------------------------------------------------------------------- */
@@ -340,6 +344,8 @@ header nav a:hover {
 #courses .courseBox .textContent {
     margin: 16px;
 }
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 700px) {
     #courses {
@@ -361,5 +367,111 @@ header nav a:hover {
         width: 100%;
         background-color: #d8d8d8;
         margin: 8px 0;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* THESIS */
+
+#thesis {
+    background-color: #f3f5f5;
+    padding: 32px 24px;
+}
+
+#thesis h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#thesis .banner {
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+/* LEFT SIDE */
+
+#thesis .left {
+    max-width: 60%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-content: flex-start;
+}
+
+/* RIGHT SIDE */
+
+#thesis .right .sideItem {
+    height: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    transition: background-color 0.15s ease-in-out;
+}
+
+#thesis .right .sideItem:hover {
+    background-color: #d8d8d8;
+}
+
+#thesis .right .sideItem img {
+    display: inline-block;
+    max-width: 14vw;
+    height: auto;
+}
+
+#thesis .right .sideItem .textContent {
+    display: inline-block;
+    margin-left: 16px;
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 700px) {
+    #thesis .banner {
+        display: block;
+    }
+
+    #thesis .left {
+        max-width: 100%;
+        display: block;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* FOOTER */
+footer {
+    background-color: rgba(245, 245, 245, 0.541);
+    padding: 16px 24px;
+}
+
+footer #legal {
+    float: right;
+}
+
+footer #legal a {
+    margin: 0 20px;
+}
+
+@media only screen and (max-width: 700px) {
+    footer {
+        padding: 16px;
     }
 }
