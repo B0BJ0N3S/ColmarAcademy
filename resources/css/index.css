@@ -338,6 +338,7 @@ header nav a:hover {
     #banner2 .right .sideItem .textContent {
         display: inline-block;
         margin-left: 18px;
+        margin-top: 10px;
     }
 }
 
