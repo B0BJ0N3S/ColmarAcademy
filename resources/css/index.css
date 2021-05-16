@@ -426,6 +426,11 @@ header nav a:hover {
         width: 100%;
         background-color: #d8d8d8;
         margin: 8px 0;
+        padding: 10px 0;
+    }
+
+    #courses .courseBox .textContent {
+        margin: 0 16px;
     }
 }
 
